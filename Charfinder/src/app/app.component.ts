@@ -2,9 +2,9 @@ import {
   Component, ComponentFactoryResolver, ComponentRef, OnDestroy, OnInit, ViewChild,
   ViewContainerRef
 } from '@angular/core';
-
-import {NavigationService} from './navigation/navigation-service';
-import {part} from './part';
+import {AllgemeineDaten} from './allgemeineDaten';
+import {Abschnitt} from './abschnitt';
+import {ViewSwitchService} from './view-switch/view-switch-service';
 
 
 @Component({
@@ -17,32 +17,31 @@ import {part} from './part';
 export class AppComponent implements OnDestroy, OnInit {
   @ViewChild('appHost', {read: ViewContainerRef}) container;
   componentRef: ComponentRef<ComponentFactoryResolver>;
-  title = 'Create-A-Character';
+  title = 'Formular für die Prozesskostenhilfe';
 
-  constructor(private navigationService: NavigationService,
-              private componentFactoryResolver: ComponentFactoryResolver) {
-    this.navigationService.formChanged.subscribe(this.onFormViewChanged);
+  constructor(private viewSwitchService: ViewSwitchService,
+              private componentFactoryResolver: ComponentFactoryResolver,
+              public allgemeineDaten: AllgemeineDaten) {
+    this.viewSwitchService.formChanged.subscribe(this.onFormViewChanged);
   }
 
   ngOnInit() {
-    this.createComponent();
+    this.erschaffeComponent();
   }
 
   ngOnDestroy() {
     this.componentRef.destroy();
   }
 
-  createComponent() {
+  erschaffeComponent() {
     this.container.clear();
-    const factory = this.componentFactoryResolver.resolveComponentFactory(this.navigationService.currentPart.component);
+    const factory = this.componentFactoryResolver.resolveComponentFactory(this.viewSwitchService.currentAbschnitt.component);
     this.componentRef = this.container.createComponent(factory);
   }
 
-  private onFormViewChanged = (part: part) => {
+  private onFormViewChanged = (abschnitt: Abschnitt) => {
     this.container.clear();
-    const factory = this.componentFactoryResolver.resolveComponentFactory(part.component);
+    const factory = this.componentFactoryResolver.resolveComponentFactory(abschnitt.component);
     this.componentRef = this.container.createComponent(factory);
-
-    }
-
+  }
 }

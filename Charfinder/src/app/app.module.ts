@@ -11,7 +11,6 @@ import {PartGoalsComponent} from './form/part-goals/part-goals.component';
 import {PartContactsComponent} from './form/part-contacts/part-contacts.component';
 import {PartSkillsComponent} from './form/part-skills/part-skills.component';
 import {PartReactionsComponent} from './form/part-reactions/part-reactions.component';
-import {NavigationService} from './navigation/navigation-service';
 import {ContactsData} from './formdata/contacts-data/contacts-data';
 import {GoalsData} from './formdata/goals-data/goals-data';
 import {PersonData} from './formdata/person-data/person-data';
@@ -21,9 +20,11 @@ import {StartData} from './formdata/start-data/start-data';
 import {Subtitles} from './common/subtitles';
 import {Questions} from './common/questions';
 import {OriginData} from './formdata/origin-data/origin-data';
-import {StepSpeicher} from './StepSpeicher';
+import {StepSpeicher} from './stepSpeicher';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {ViewSwitchComponent} from './view-switch/view-switch.component';
+import {ViewSwitchService} from './view-switch/view-switch-service';
 
 
 
@@ -38,6 +39,7 @@ import {FormsModule} from '@angular/forms';
     PartContactsComponent,
     PartSkillsComponent,
     PartReactionsComponent,
+    ViewSwitchComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,7 @@ import {FormsModule} from '@angular/forms';
     StartData,
     Subtitles,
     Questions,
-    NavigationService,
+    ViewSwitchService,
     StepSpeicher
   ],
   entryComponents: [
