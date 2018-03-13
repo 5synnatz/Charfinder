@@ -2,6 +2,7 @@
  * @author: Jana
  **/
 
-export class goalsdata {
+export class GoalsData {
+  toArchieve = '';
 
 }

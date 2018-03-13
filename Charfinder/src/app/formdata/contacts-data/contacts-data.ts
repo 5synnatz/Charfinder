@@ -2,6 +2,7 @@
  * @author: Jana
  **/
 
-export class contactsdata {
+export class ContactsData {
+  fame = '';
 
 }

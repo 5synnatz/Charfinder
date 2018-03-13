@@ -2,6 +2,6 @@
  * @author: Jana
  **/
 
-export class skillsdata {
-
+export class SkillsData {
+ skills = '';
 }

@@ -3,20 +3,28 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { EndpartComponent } from './form/endpart/endpart/endpart.component';
-import { StartpartComponent } from './form/startpart/startpart.component';
-import { PersonpartComponent } from './form/personpart/personpart.component';
-import { FähigkeitenpartComponent } from './formular/fähigkeitenpart/fähigkeitenpart.compone;
-import { GoalspartComponent } from './formular/goalspart/goalspart.compone;
-import { ContactspartComponent } from './formular/contactspart/contactspart.compone;
-import { PartOriginComponent } from './formular/part-origin/part-origin.compone;
-import { PartResponseComponent } from './formular/part-response/part-response.compone;
-import { NavigationComponent } from './navigation/navigation.compone;
-import { PartPersonComponent } from './form/part-person/part-person.compone;
-import { PartGoalsComponent } from './form/part-goals/part-goals.compone;
-import { PartContactsComponent } from './form/part-contacts/part-contacts.compone;
-import { PartSkillsComponent } from './form/part-skills/part-skills.compone;
-import { PartReactionComponent } from './form/part-reaction/part-reaction.component'nt'nt'nt'nt'nt'nt'nt'nt'nt'nt';
+import {EndpartComponent} from './form/endpart/endpart.component';
+import {StartpartComponent} from './form/startpart/startpart.component';
+import {PartOriginComponent} from './form/part-origin/part-origin.component';
+import {PartPersonComponent} from './form/part-person/part-person.component';
+import {PartGoalsComponent} from './form/part-goals/part-goals.component';
+import {PartContactsComponent} from './form/part-contacts/part-contacts.component';
+import {PartSkillsComponent} from './form/part-skills/part-skills.component';
+import {PartReactionsComponent} from './form/part-reactions/part-reactions.component';
+import {NavigationService} from './navigation/navigation-service';
+import {ContactsData} from './formdata/contacts-data/contacts-data';
+import {GoalsData} from './formdata/goals-data/goals-data';
+import {PersonData} from './formdata/person-data/person-data';
+import {ReactionsData} from './formdata/reaction-data/reaction-data';
+import {SkillsData} from './formdata/skills-data/skills-data';
+import {StartData} from './formdata/start-data/start-data';
+import {Subtitles} from './common/subtitles';
+import {Questions} from './common/questions';
+import {OriginData} from './formdata/origin-data/origin-data';
+import {StepSpeicher} from './StepSpeicher';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+
 
 
 @NgModule({
@@ -24,23 +32,41 @@ import { PartReactionComponent } from './form/part-reaction/part-reaction.compon
     AppComponent,
     EndpartComponent,
     StartpartComponent,
-    PersonpartComponent,
-    FähigkeitenpartCompo,
-    GoalspartComponent,
-    ContactspartComponent,
     PartOriginComponent,
-    PartResponseComponent,
-    NavigationComponent,
     PartPersonComponent,
     PartGoalsComponent,
     PartContactsComponent,
     PartSkillsComponent,
-    PartReactionComponentnent
+    PartReactionsComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    ContactsData,
+    GoalsData,
+    OriginData,
+    PersonData,
+    ReactionsData,
+    SkillsData,
+    StartData,
+    Subtitles,
+    Questions,
+    NavigationService,
+    StepSpeicher
+  ],
+  entryComponents: [
+    EndpartComponent,
+    StartpartComponent,
+    PartOriginComponent,
+    PartPersonComponent,
+    PartGoalsComponent,
+    PartContactsComponent,
+    PartSkillsComponent,
+    PartReactionsComponent,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

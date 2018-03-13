@@ -2,6 +2,7 @@
  * @author: Jana
  **/
 
-export class origindata {
+export class OriginData {
+  suffering = '';
 
 }

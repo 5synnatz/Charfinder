@@ -1,38 +1,39 @@
 import {EventEmitter, Injectable} from '@angular/core';
-import {StepSpeicher} from '../stepSpeicher';
-import {Abschnitt} from '../abschnitt';
+import {StepSpeicher} from '../StepSpeicher';
+
+import {part} from '../part';
 
 /**
  * @author Isabella
  **/
 @Injectable()
-export class navigationService {
-  private _currentAbschnitt: Abschnitt;
+export class NavigationService {
+  private _currentPart: part;
 
   public allNavButtonsString: string[];
-  public formChanged: EventEmitter<Abschnitt>;
+  public formChanged: EventEmitter<part>;
 
-  public constructor(private stepSpeicher: StepSpeicher) {
-    this._currentAbschnitt = this.stepSpeicher.abschnitte[0];
+  public constructor(private stepspeicher: StepSpeicher) {
+    this._currentPart = this.stepspeicher.parts[0];
     this.allNavButtonsString = [];
-    this.formChanged = new EventEmitter<Abschnitt>();
+    this.formChanged = new EventEmitter<part>();
     this.initializeNavButtonStrings();
   }
 
-  public get currentAbschnitt(): Abschnitt {
-    return this._currentAbschnitt;
+  public get currentPart(): part {
+    return this._currentPart;
   }
 
-  public set currentAbschnitt(abschnitt: Abschnitt) {
-    this._currentAbschnitt = this.stepSpeicher.abschnitte.find(a => a.id === abschnitt.id);
-    this.formChanged.emit(this._currentAbschnitt);
+  public set currentPart(part: part) {
+    this._currentPart = this.stepspeicher.parts.find(a => a.id === part.id);
+    this.formChanged.emit(this._currentPart);
   }
 
-  public get alleAbschnitte(): Abschnitt[] {
-    return this.stepSpeicher.abschnitte;
+  public get alleAbschnitte(): part[] {
+    return this.stepspeicher.parts;
   }
 
   public initializeNavButtonStrings() {
-    this.allNavButtonsString = this.stepSpeicher.abschnitte.map(abschnitt => abschnitt.id);
+    this.allNavButtonsString = this.stepspeicher.parts.map(part => part.id);
   }
 }

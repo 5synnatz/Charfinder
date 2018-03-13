@@ -2,6 +2,7 @@
  * @author: Jana
  **/
 
-export class persondata {
-
+export class PersonData {
+  health = '';
 }
+
