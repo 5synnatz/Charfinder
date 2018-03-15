@@ -1,0 +1,6 @@
+<div id="navBackground">
+<div class="back-forward-buttons">
+  <button *ngIf="currentFormString != '0'" class="btn btn-primary custom-control-inline back-forward-button"  (click)="showFormBefore()"><span class="glyphicon glyphicon-menu-left"></span></button>
+  <button *ngIf="currentFormString != '9'" type="button" class="btn btn-primary custom-control-inline back-forward-button"  (click)="showFormAfter()"><span class="glyphicon glyphicon-menu-right"></span></button>
+</div>
+</div>

@@ -1,0 +1,10 @@
+.back-forward-buttons {
+  bottom: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.back-forward-button{
+  color: cornsilk;
+  background-color: darkslategray;
+  border-color: darkslategray;
+}

@@ -26,6 +26,7 @@ import {FormsModule} from '@angular/forms';
 import {ViewSwitchComponent} from './view-switch/view-switch.component';
 import {ViewSwitchService} from './view-switch/view-switch-service';
 import {AppDirective} from './app.directive';
+import { NavBarSwitchComponent } from './view-switch/nav-bar-switch/nav-bar-switch.component';
 
 
 
@@ -42,6 +43,7 @@ import {AppDirective} from './app.directive';
     PartSkillsComponent,
     PartReactionsComponent,
     ViewSwitchComponent,
+    NavBarSwitchComponent,
   ],
   imports: [
     BrowserModule,

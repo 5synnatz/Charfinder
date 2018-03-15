@@ -3,34 +3,31 @@
   position: relative;
   width: 50px;
   height: 500px;
-  background: #2694ff;
+  background: cornsilk;
 }
 
 .sidenav {
   height: 100%;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 100px;
   width: max-content;
 }
 
 .sidenav-button {
-  background: #2694ff;
-  color: white;
+  background: grey;
+  color: cornsilk;
   font-size: 24px;
   height: fit-content;
   width: 220px;
 }
 
-.sidenav-button-checked {
-  background: white;
-  color: #2694ff;
+.sidenav-button-active {
+  background: cornsilk;
+  color: grey;
   font-size: 38px;
   height: fit-content;
   width: 220px;
 }
 
-.back-forward-buttons {
-  bottom: 30px;
-  padding-left: 30px;
-}
+

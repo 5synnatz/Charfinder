@@ -1,32 +1,24 @@
-import {Component} from '@angular/core';
-import {ViewSwitchService} from './view-switch-service';
+import { Component} from '@angular/core';
+import {ViewSwitchService} from '../view-switch-service';
 
 @Component({
-  selector: 'app-view-switch',
-  templateUrl: './view-switch.component.html',
-  styleUrls: ['./view-switch.component.css']
+  selector: 'app-nav-bar-switch',
+  templateUrl: './nav-bar-switch.component.html',
+  styleUrls: ['./nav-bar-switch.component.css']
 })
-/**
- * @author Isabella
- **/
-export class ViewSwitchComponent {
+export class NavBarSwitchComponent {
 
-  constructor(private viewSwitchService: ViewSwitchService) {
+  constructor(private viewSwitchService: ViewSwitchService) { }
+
+  public get allNavButtons(): string[] {
+    return this.viewSwitchService.allNavButtonsString;
   }
 
   public get currentFormString(): string {
     return this.viewSwitchService.currentAbschnitt.id;
   }
 
-  public get allNavButtons(): string[] {
-    return this.viewSwitchService.allNavButtonsString;
-  }
-
-  public showForm(selectedFormString: string) {
-    this.viewSwitchService.currentAbschnitt = this.viewSwitchService.alleAbschnitte.find(abschnitt => abschnitt.id === selectedFormString);
-  }
-
-  /*public showFormBefore() {
+  public showFormBefore() {
     // not the first form
     if (this.currentFormString !== this.allNavButtons[0]) {
       const indexFormBefore: number = this.viewSwitchService.alleAbschnitte.indexOf(this.viewSwitchService.currentAbschnitt) - 1;
@@ -37,5 +29,6 @@ export class ViewSwitchComponent {
   public showFormAfter() {
     const indexFormBefore: number = this.viewSwitchService.alleAbschnitte.indexOf(this.viewSwitchService.currentAbschnitt) + 1;
     this.viewSwitchService.currentAbschnitt = this.viewSwitchService.alleAbschnitte[indexFormBefore];
-  }*/
+  }
+
 }

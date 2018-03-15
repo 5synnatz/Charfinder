@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {background-color: gainsboro;}
+div {
+  background-color: grey;
+  color: cornsilk;
+}
+.form-control{
+  color: grey;
+  background-color: cornsilk;
+}
