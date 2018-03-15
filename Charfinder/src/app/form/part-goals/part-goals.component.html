@@ -1,13 +1,13 @@
 <div class="form-group" id="formularUeberschrift">
-  <h3>{{Subtitles.goals}}</h3>
+  <h3>{{Subtitles.Goals}}</h3>
   <div class="controls">
 
     <div class="row">
       <div class="col-sm-8">
         <div class="form-group">
-          <label for="name">{{Questions.goals_toArchieve}} *</label>
-          <input id="name" type="text" class="form-control" placeholder="..."
-                 [(ngModel)]="GoalsData.toArchieve">
+          <label for="name">{{Questions.goals_toArchieve}}</label><br>
+          <textarea id="name" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="GoalsData.toArchieve"rows="5" cols="120"></textarea>
         </div>
       </div>
     </div>

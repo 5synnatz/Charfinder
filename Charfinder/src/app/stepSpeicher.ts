@@ -17,14 +17,14 @@ export class StepSpeicher {
   abschnitte: Abschnitt[] = [];
 
   constructor() {
-    this.abschnitte.push(new Abschnitt('0', 'Beginn', StartpartComponent));
-    this.abschnitte.push(new Abschnitt('A', 'Personendaten', PartPersonComponent));
-    this.abschnitte.push(new Abschnitt('B', 'Versicherungen', PartSkillsComponent));
-    this.abschnitte.push(new Abschnitt('C', 'Unterhaltsanspruch', PartReactionsComponent));
-    this.abschnitte.push(new Abschnitt('D', 'GewaehrterUnterhalt', PartOriginComponent));
-    this.abschnitte.push(new Abschnitt('E', 'Bruttoeinnahmen', PartGoalsComponent));
-    this.abschnitte.push(new Abschnitt('F', 'Abzuege', PartContactsComponent));
-    this.abschnitte.push(new Abschnitt('9', 'Eigentum', EndpartComponent));
+    this.abschnitte.push(new Abschnitt('Start', 'Beginn', StartpartComponent));
+    this.abschnitte.push(new Abschnitt('Person', 'Personendaten', PartPersonComponent));
+    this.abschnitte.push(new Abschnitt('Fähigkeiten', 'Versicherungen', PartSkillsComponent));
+    this.abschnitte.push(new Abschnitt('Reaktionen', 'Unterhaltsanspruch', PartReactionsComponent));
+    this.abschnitte.push(new Abschnitt('Herkunft', 'GewaehrterUnterhalt', PartOriginComponent));
+    this.abschnitte.push(new Abschnitt('Ziele', 'Bruttoeinnahmen', PartGoalsComponent));
+    this.abschnitte.push(new Abschnitt('Kontakte', 'Abzuege', PartContactsComponent));
+    this.abschnitte.push(new Abschnitt('Ende', 'Eigentum', EndpartComponent));
 
   }
 }
