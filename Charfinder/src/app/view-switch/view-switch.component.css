@@ -7,19 +7,27 @@
 }
 
 .sidenav {
+  height: 100%;
   position: fixed;
   left: 0;
-  top: 50px;
+  top: 100px;
+  width: max-content;
 }
 
 .sidenav-button {
   background: #2694ff;
   color: white;
+  font-size: 24px;
+  height: fit-content;
+  width: 220px;
 }
 
 .sidenav-button-checked {
   background: white;
   color: #2694ff;
+  font-size: 38px;
+  height: fit-content;
+  width: 220px;
 }
 
 .back-forward-buttons {
