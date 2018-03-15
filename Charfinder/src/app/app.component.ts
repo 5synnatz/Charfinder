@@ -2,7 +2,6 @@ import {
   Component, ComponentFactoryResolver, ComponentRef, OnDestroy, OnInit, ViewChild,
   ViewContainerRef
 } from '@angular/core';
-import {AllgemeineDaten} from './allgemeineDaten';
 import {Abschnitt} from './abschnitt';
 import {ViewSwitchService} from './view-switch/view-switch-service';
 
@@ -20,8 +19,7 @@ export class AppComponent implements OnDestroy, OnInit {
   title = 'Formular für die Prozesskostenhilfe';
 
   constructor(private viewSwitchService: ViewSwitchService,
-              private componentFactoryResolver: ComponentFactoryResolver,
-              public allgemeineDaten: AllgemeineDaten) {
+              private componentFactoryResolver: ComponentFactoryResolver) {
     this.viewSwitchService.formChanged.subscribe(this.onFormViewChanged);
   }
 

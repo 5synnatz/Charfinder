@@ -25,12 +25,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {ViewSwitchComponent} from './view-switch/view-switch.component';
 import {ViewSwitchService} from './view-switch/view-switch-service';
+import {AppDirective} from './app.directive';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    AppDirective,
     EndpartComponent,
     StartpartComponent,
     PartOriginComponent,
