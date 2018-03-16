@@ -13,7 +13,7 @@ export class ViewSwitchComponent {
 
   constructor(private viewSwitchService: ViewSwitchService) {
   }
-
+//TODO code dupel mit nav-bar-switch
   public get currentFormString(): string {
     return this.viewSwitchService.currentAbschnitt.id;
   }

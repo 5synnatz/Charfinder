@@ -10,6 +10,7 @@ export class NavBarSwitchComponent {
 
   constructor(private viewSwitchService: ViewSwitchService) { }
 
+  //TODO Code dupel mit View-switch
   public get allNavButtons(): string[] {
     return this.viewSwitchService.allNavButtonsString;
   }
