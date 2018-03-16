@@ -10,7 +10,7 @@ import {ReactionsData} from '../../formdata/reaction-data/reaction-data';
 })
 export class PartReactionsComponent {
 
-  constructor(public Questions: Questions, public ReactionsData: ReactionsData, public Subtitles: Subtitles) { }
+  constructor(public questions: Questions, public reactionsData: ReactionsData, public subtitles: Subtitles) { }
 
 
 }

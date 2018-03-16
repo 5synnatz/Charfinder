@@ -10,7 +10,7 @@ import {ContactsData} from '../../formdata/contacts-data/contacts-data';
 })
 export class PartContactsComponent  {
 
-  constructor(public Questions: Questions, public ContactsData: ContactsData, public Subtitles: Subtitles) { }
+  constructor(public questions: Questions, public contactsData: ContactsData, public subtitles: Subtitles) { }
 
 
 }

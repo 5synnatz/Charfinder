@@ -1,15 +1,43 @@
 <div class="form-group" id="formularUeberschrift">
-  <h3>{{Subtitles.Goals}}</h3>
+  <h3>{{subtitles.Goals}}</h3>
   <div class="controls">
 
     <div class="row">
       <div class="col-sm-12">
         <div class="form-group">
-          <label for="name">{{Questions.goals_toArchieve}}</label><br>
-          <textarea id="name" type="text" class="form-control" placeholder="<Platz für Ideen>"
-                    [(ngModel)]="GoalsData.toArchieve"rows="5" cols="120" ></textarea>
+          <label for="toArchieve">{{questions.goals_toArchieve}}</label><br>
+          <textarea id="toArchieve" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="goalsData.toArchieve" rows="5" cols="120" ></textarea>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="toDo">{{questions.goals_toDo}}</label><br>
+          <textarea id="toDo" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="goalsData.toDo" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="person">{{questions.goals_person}}</label><br>
+          <textarea id="person" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="goalsData.person" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="why">{{questions.goals_why}}</label><br>
+          <textarea id="why" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="goalsData.why" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

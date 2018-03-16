@@ -4,4 +4,5 @@
 
 export class StartData {
   idea = '';
+  world = '';
 }

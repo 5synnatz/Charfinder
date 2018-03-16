@@ -10,7 +10,7 @@ import {OriginData} from '../../formdata/origin-data/origin-data';
 })
 export class PartOriginComponent  {
 
-  constructor(public Questions: Questions, public OriginData: OriginData, public Subtitles: Subtitles) { }
+  constructor(public questions: Questions, public originData: OriginData, public subtitles: Subtitles) { }
 
 
 }

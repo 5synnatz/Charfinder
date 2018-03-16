@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import {Subtitles} from '../../common/subtitles';
 import {Questions} from '../../common/questions';
 import {GoalsData} from '../../formdata/goals-data/goals-data';
@@ -8,11 +8,9 @@ import {GoalsData} from '../../formdata/goals-data/goals-data';
   templateUrl: './part-goals.component.html',
   styleUrls: ['./part-goals.component.css']
 })
-export class PartGoalsComponent implements OnInit {
+export class PartGoalsComponent {
 
-  constructor(public Questions: Questions, public GoalsData: GoalsData, public Subtitles: Subtitles) { }
+  constructor(public questions: Questions, public goalsData: GoalsData, public subtitles: Subtitles) { }
 
-  ngOnInit() {
-  }
 
 }

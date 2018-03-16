@@ -1,15 +1,52 @@
 <div class="form-group" id="formularUeberschrift">
-  <h3>{{Subtitles.Contacts}}</h3>
+  <h3>{{subtitles.Contacts}}</h3>
   <div class="controls">
 
     <div class="row">
       <div class="col-sm-12">
         <div class="form-group">
-          <label for="name">{{Questions.contacts_fame}}</label><br>
-          <textarea id="name" type="text" class="form-control" placeholder="<Platz für Ideen>"
-                    [(ngModel)]="ContactsData.fame"rows="5" cols="120"></textarea>
+          <label for="fame">{{questions.contacts_fame}}</label><br>
+          <textarea id="fame" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="contactsData.fame" rows="5" cols="120"></textarea>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="contacts">{{questions.contacts_contacts}}</label><br>
+          <textarea id="contacts" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="contactsData.contacts" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="contact">{{questions.contacts_contact}}</label><br>
+          <textarea id="contact" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="contactsData.contacts" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="celebs">{{questions.contacts_celebs}}</label><br>
+          <textarea id="celebs" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="contactsData.celebs" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="friends">{{questions.contacts_friends}}</label><br>
+          <textarea id="friends" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="contactsData.friends" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

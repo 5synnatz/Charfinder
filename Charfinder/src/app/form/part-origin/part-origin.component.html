@@ -1,15 +1,43 @@
 <div class="form-group" id="formularUeberschrift">
-  <h3>{{Subtitles.Origin}}</h3>
+  <h3>{{subtitles.Origin}}</h3>
   <div class="controls">
 
     <div class="row">
       <div class="col-sm-12">
         <div class="form-group">
-          <label for="name">{{Questions.origin_suffering}}</label><br>
-          <textarea id="name" type="text" class="form-control" placeholder="<Platz für Ideen>"
-                    [(ngModel)]="OriginData.suffering" rows="5" cols="120"></textarea>
+          <label for="suffering">{{questions.origin_suffering}}</label><br>
+          <textarea id="suffering" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="originData.suffering" rows="5" cols="120"></textarea>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="happy">{{questions.origin_happy}}</label><br>
+          <textarea id="happy" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="originData.happy" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="family">{{questions.origin_family}}</label><br>
+          <textarea id="family" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="originData.family" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="socialBackground">{{questions.origin_socialBackground}}<br>{{questions.origin_socialBackgroundAddition}}</label><br>
+          <textarea id="socialBackground" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="originData.socialBackground" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

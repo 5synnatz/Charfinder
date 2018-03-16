@@ -1,6 +1,7 @@
 export class Questions {
   //start-part
   public readonly start_idea = 'Hast Du schon eine Idee für Deinen Charakter?';
+  public readonly start_world = 'In welcher Welt ist Dein Charakter zu Hause?';
 
   //person-part
   public readonly person_health = 'Wie gesund ist Dein Charakter körperlich/geistig/psychisch?';

@@ -1,24 +1,61 @@
 <div class="form-group" id="formularUeberschrift">
-  <h3>{{Subtitles.Reactions}}</h3>
+  <h3>{{subtitles.Reactions}}</h3>
   <div class="controls">
 
     <div class="row">
       <div class="col-sm-12">
         <div class="form-group">
-          <label for="name">{{Questions.reactions_relaxation}}</label><br>
+          <label for="name">{{questions.reactions_relaxation}}</label><br>
           <textarea id="name" type="text" class="form-control" placeholder="<Platz für Ideen>"
-                    [(ngModel)]="ReactionsData.relaxation" rows="5" cols="120"></textarea>
+                    [(ngModel)]="reactionsData.relaxation" rows="5" cols="120"></textarea>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
         <div class="form-group">
-          <label for="ame">{{Questions.reactions_relaxation}}</label><br>
-          <textarea id="ame" type="text" class="form-control" placeholder="<Platz für Ideen>"
-                    [(ngModel)]="ReactionsData.relaxation" rows="5" cols="120"></textarea>
+          <label for="treat">{{questions.reactions_treat}}</label><br>
+          <textarea id="treat" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="reactionsData.treat" rows="5" cols="120"></textarea>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="helpless">{{questions.reactions_helpless}}</label><br>
+          <textarea id="helpless" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="reactionsData.helpless" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="bullied">{{questions.reactions_bullied}}</label><br>
+          <textarea id="bullied" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="reactionsData.bullied" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="sexual">{{questions.reactions_sexual}}</label><br>
+          <textarea id="sexual" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="reactionsData.sexual" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="stress">{{questions.reactions_stress}}<br>{{questions.reactions_stressAddition}}</label><br>
+          <textarea id="stress" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="reactionsData.stress" rows="5" cols="120"></textarea>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

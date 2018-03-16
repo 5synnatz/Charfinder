@@ -1,15 +1,61 @@
 <div class="form-group" id="formularUeberschrift">
-  <h3>{{Subtitles.Skills}}</h3>
+  <h3>{{subtitles.Skills}}</h3>
   <div class="controls">
 
     <div class="row">
       <div class="col-sm-12">
         <div class="form-group">
-          <label for="name">{{Questions.skills_skills}}</label><br>
-          <textarea id="name" type="text" class="form-control" placeholder="<Platz für Ideen>"
-                    [(ngModel)]="SkillsData.skills" rows="5" cols="120" ></textarea>
+          <label for="skills">{{questions.skills_skills}}</label><br>
+          <textarea id="skills" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="skillsData.skills" rows="5" cols="120" ></textarea>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="nonskills">{{questions.skills_nonSkills}}</label><br>
+          <textarea id="nonskills" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="skillsData.nonSkills" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="supernatural">{{questions.skills_supernatural}}</label><br>
+          <textarea id="supernatural" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="skillsData.supernatural" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="occupation">{{questions.skills_occupation}}</label><br>
+          <textarea id="occupation" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="skillsData.occupation" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="education">{{questions.skills_education}}</label><br>
+          <textarea id="education" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="skillsData.education" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="learning">{{questions.skills_learning}}</label><br>
+          <textarea id="learning" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="skillsData.learning" rows="5" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

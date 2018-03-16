@@ -1,15 +1,25 @@
 <div class="form-group" id="formularUeberschrift">
-  <h3>{{Subtitles.Start}}</h3>
+  <h3>{{subtitles.Start}}</h3>
   <div class="controls">
 
     <div class="row">
       <div class="col-sm-12">
         <div class="form-group">
-          <label for="name">{{Questions.start_idea}} </label><br>
-          <textarea id="name" type="text" class="form-control" placeholder="<Platz für Ideen>"
-                    [(ngModel)]="StartData.idea" rows="10" cols="120" ></textarea>
+          <label for="idea">{{questions.start_idea}} </label><br>
+          <textarea id="idea" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="startData.idea" rows="10" cols="120" ></textarea>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="world">{{questions.start_world}} </label><br>
+          <textarea id="world" type="text" class="form-control" placeholder="<Platz für Ideen>"
+                    [(ngModel)]="startData.world" rows="2" cols="120" ></textarea>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

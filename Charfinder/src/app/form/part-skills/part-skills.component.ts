@@ -12,7 +12,7 @@ import {SkillsData} from '../../formdata/skills-data/skills-data';
 })
 export class PartSkillsComponent {
 
-  constructor(public Questions: Questions, public SkillsData: SkillsData, public Subtitles: Subtitles) { }
+  constructor(public questions: Questions, public skillsData: SkillsData, public subtitles: Subtitles) { }
 
 
 }

@@ -10,7 +10,7 @@ import {StartData} from '../../formdata/start-data/start-data';
 })
 export class StartpartComponent {
 
-  constructor(public Questions: Questions, public StartData: StartData, public Subtitles: Subtitles) { }
+  constructor(public questions: Questions, public startData: StartData, public subtitles: Subtitles) { }
 
 
 }
