@@ -8,7 +8,7 @@ export class Questions {
 
   //skills-part
   public readonly skills_skills = 'Ist Dein Charakter in etwas besonders gut?';
-  public readonly skills_nonskills = 'Ist Dein Charakter in etwas besonders schlecht?';
+  public readonly skills_nonSkills = 'Ist Dein Charakter in etwas besonders schlecht?';
   public readonly skills_supernatural = 'Hat Dein Charakter Fähigkeiten, die in unserer Welt nicht normal wären?';
   public readonly skills_occupation = 'Hat Dein Charakter einen Beruf erlernt?';
   public readonly skills_education = 'Hat Dein Charakter irgendeine Art Bildung genossen?';
@@ -16,7 +16,7 @@ export class Questions {
 
   //reactions-part
   public readonly reactions_helpless = 'Wie reagiert Dein Charakter auf eine hilfsbedürftige Person?';
-  public readonly reactions_byllied = 'Wie reagiert Dein Charakter darauf herablassend behandelt zu werden?';
+  public readonly reactions_bullied = 'Wie reagiert Dein Charakter darauf herablassend behandelt zu werden?';
   public readonly reactions_treat = 'Wie reagiert Dein Charakter wenn er bedroht wird?';
   public readonly reactions_sexual = 'Wie reagiert Dein Charakter auf eine für ihn/sie/es sexuell anziehende Person?';
   public readonly reactions_relaxation = 'Was macht Dein Charakter zur Entspannung?';
